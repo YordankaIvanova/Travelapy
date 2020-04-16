@@ -1,0 +1,14 @@
+<div class="travel-header">
+    <nav class="navbar">
+        <div class="nav-item" routerLink="/home">Home</div>
+        <div class="nav-item">Destinations</div>
+        <div class="nav-item" routerLink="/search">Search</div>
+    </nav>
+    <div class="login-links flex-grid">
+        <div (click)="openDialog()">Log in</div>
+        <!-- <button mat-raised-button >Open modal</button> -->
+        <div>Sign up</div>
+    </div>
+</div>
+
+<trv-dialog></trv-dialog>
