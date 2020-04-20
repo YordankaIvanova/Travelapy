@@ -7,7 +7,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
-  declarations: [CarouselComponent, IntroComponent, HomeComponent],
+  declarations: [
+    CarouselComponent, 
+    IntroComponent, 
+    HomeComponent
+  ],
   imports: [
     CommonModule,
     NgbModule

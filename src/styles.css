@@ -2,3 +2,7 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import './flex-layout.less';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.page-container {
+    padding: 0px 50px;
+}

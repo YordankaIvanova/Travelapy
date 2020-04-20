@@ -1,13 +1,22 @@
 .flex-grid {
-    display: flex;
+    display: flex; 
+}
 
-    &.column  {
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.column  {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
 
-    &.row {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.flex-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1;
 }

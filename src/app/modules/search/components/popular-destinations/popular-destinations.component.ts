@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-popular-destinations',
+  selector: 'trv-popular-destinations',
   templateUrl: './popular-destinations.component.html',
   styleUrls: ['./popular-destinations.component.less']
 })

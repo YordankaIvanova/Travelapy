@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from '@app/app.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
@@ -9,7 +10,9 @@ import { FooterComponent } from '@shared/components/footer/footer.component';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { HomeModule } from '@modules/home/home.module';
 import { MaterialModule } from './material.module';
-import { ModalComponent } from './shared/components/modal/modal.component';
+import { ModalComponent } from '@shared/components/modal/modal.component';
+import { SearchModule } from '@modules/search/search.module';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ModalComponent } from './shared/components/modal/modal.component';
     HomeModule,
     RouterModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    SearchModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [ AppComponent ],

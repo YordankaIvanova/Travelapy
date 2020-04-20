@@ -1,0 +1,56 @@
+@import '../../../../../variables';
+
+.search-tools-container {
+   height: 260px;
+   background-color: @deep-cyan-blue;
+   color: @white;
+   font-size: @sixteen-pixels;
+
+   .search-form {
+      padding-top: 67px;
+
+      .flex-grid {
+         text-align: center;
+
+         .search-field-container {
+            justify-content: space-evenly;
+
+            .intro-button {
+               height: 40px;
+               width: 120px;
+               background-color: @soft-red;
+               border-radius: 20px;
+               margin: auto auto 35px auto;
+               flex-grow: 0.1;
+               line-height: 40px;
+            }
+   
+            .search-field {
+               width: 70%;
+               border: 1px solid;
+               border-radius: 3px;
+               height: 39px;
+               flex-grow: .7;
+               margin-left: 18px;
+            }
+         }
+         
+      
+         .search-filters {
+            margin-top: 20px;
+            justify-content: space-evenly;
+
+            .flex-item {
+               flex-grow: .3;
+               height: 30px;
+               border: 1px solid;
+               border-radius: 3px;
+            }
+
+            .filter-by-label {
+               line-height: 30px;
+            }
+         }
+      }
+   }
+}

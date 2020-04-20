@@ -1,1 +1,33 @@
-<p>search-tools works!</p>
+<div class="search-tools-container">
+    <form formGroup="searchForm" class="search-form">
+        <div class="flex-grid">
+            <div class="column">
+                <div class="row search-field-container">
+                    <input class="flex-item search-field" type="text" placeholder="Enter your keyword" formControlName="searchField" />
+                    <div class="intro-button flex-item">
+                        Search
+                    </div>
+                </div>
+                
+                <div class="page-container">
+                    <div class="row search-filters">
+                        <div class="filter-by-label">Filter by:</div>
+                        <select formControlName="ratingSelect" class="flex-item">
+                            <option value="" disabled selected>Rating</option>
+                            <option *ngFor="let rating of ratings">{{ rating }}</option>
+                        </select>
+                        <select formControlName="priceSelect" class="flex-item">
+                            <option value="" disabled selected>Price</option>
+                            <option *ngFor="let price of prices">{{ price }}</option>
+                        </select>
+                        <select formControlName="desireSelect" class="flex-item">
+                            <option value="" disabled selected>Desire</option>
+                            <option *ngFor="let desire of desires">{{ desire }}</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </form>   
+</div>
