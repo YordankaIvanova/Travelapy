@@ -1,0 +1,7 @@
+<div class="destinations-container">
+    <ul>
+        <li *ngFor="let destination of destinations">
+        <a [routerLink]='"."' [fragment]="destination">{{ destination }}</a>
+        </li>
+    </ul>
+</div>

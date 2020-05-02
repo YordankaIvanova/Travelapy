@@ -12,6 +12,7 @@ import { HomeModule } from '@modules/home/home.module';
 import { MaterialModule } from './material.module';
 import { ModalComponent } from '@shared/components/modal/modal.component';
 import { SearchModule } from '@modules/search/search.module';
+import { TravelJournalModule } from './modules/travel-journal/travel-journal.module';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SearchModule } from '@modules/search/search.module';
     MaterialModule,
     SearchModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    TravelJournalModule
   ],
   providers: [],
   bootstrap: [ AppComponent ],
