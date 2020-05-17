@@ -1,8 +1,10 @@
 <div class="dialog-container">
   <h3>Travelapy</h3>
-  <input class="dialog-input" placeholder="Username" />
-  <input class="dialog-input" placeholder="Password" />
-  <button class="dialog-button">Log in</button>
+  <input class="dialog-input" placeholder="Username" #username />
+  <input class="dialog-input" placeholder="Password" #pass />
+  <button class="dialog-button" (click)="onLogInButtonClick(username.value, pass.value)">
+    Log in
+  </button>
   <div class="dialog-login-options">
     OR
   </div>

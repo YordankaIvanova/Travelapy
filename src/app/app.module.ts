@@ -13,6 +13,8 @@ import { MaterialModule } from './material.module';
 import { ModalComponent } from '@shared/components/modal/modal.component';
 import { SearchModule } from '@modules/search/search.module';
 import { TravelJournalModule } from './modules/travel-journal/travel-journal.module';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { TravelJournalModule } from './modules/travel-journal/travel-journal.mod
     SearchModule,
     ReactiveFormsModule,
     FormsModule,
-    TravelJournalModule
+    TravelJournalModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [ AppComponent ],
